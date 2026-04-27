@@ -166,6 +166,67 @@ graph TB
 9. Envie para o GitHub com `git push`
 10. Veja o histórico com `git log --oneline`
 
+---
+
+## Contribuição: Dariel — Sumatória de Letras no Alfabeto
+
+### Arquivo: `hello_dariel.py`
+
+Este arquivo calcula a **sumatória das posições das letras no alfabeto** para o nome fornecido (`Dariel`).
+
+#### Como funciona
+
+Cada letra do nome é mapeada para sua posição no alfabeto (a=1, b=2, ..., z=26). As posições são somadas para obter o total.
+
+#### Cálculo para "Dariel"
+
+| Letra | Posição no Alfabeto |
+|-------|-------------------|
+| D     | 4                 |
+| A     | 1                 |
+| R     | 18                |
+| I     | 9                 |
+| E     | 5                 |
+| L     | 12                |
+| **Total** | **49**        |
+
+```
+D(4) + A(1) + R(18) + I(9) + E(5) + L(12) = 49
+```
+
+#### Como executar
+
+```bash
+python hello_dariel.py
+```
+
+#### Saída esperada
+
+```
+Hello, my name is Dariel!
+
+Sumatoria de letras del nombre 'Dariel' en el alfabeto:
+
+  D = 4
+  A = 1
+  R = 18
+  I = 9
+  E = 5
+  L = 12
+  ──────────
+  Total = 49
+
+La sumatoria de las posiciones alfabéticas de 'Dariel' es: 49
+```
+
+#### Funções implementadas
+
+- `alphabet_position(letter)` — retorna a posição de uma letra no alfabeto (a=1 ... z=26)
+- `letter_sum(name)` — itera sobre o nome, acumula as posições e retorna o total com detalhes
+- `hello_dariel()` — função principal que exibe o resultado formatado
+
+---
+
 ## Dicas Importantes
 
 - Sempre use `git status` antes de fazer commit
